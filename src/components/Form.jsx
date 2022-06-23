@@ -1,10 +1,9 @@
 import { 
     FormControl, 
-    InputLabel, 
-
+    InputLabel,
     Select, 
     MenuItem, 
-    Button, Box } from "@mui/material" 
+ } from "@mui/material" 
 
 import CATEGORIAS from '../constants/categotias';
 import UseNewsProvider from '../hooks/useNewsProvider';
@@ -30,14 +29,6 @@ const Form = () => {
                     >{categoria.label}</MenuItem>
                 ))}
             </Select>
-            <Box sx={{marginTop:1}}>
-                <Button
-                    variant="contained"
-                    fullWidth
-                >
-                    Buscar noticias
-                </Button>
-            </Box>
         </FormControl>
     </form>
   )
